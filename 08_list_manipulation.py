@@ -53,4 +53,3 @@ def list_manipulation(lst, command, location, value=None):
         elif location == 'end':
             return lst.pop()
     return None
-

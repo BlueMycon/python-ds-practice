@@ -1,3 +1,5 @@
+WEEKDAY_NAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+
 def weekday_name(day_of_week):
     """Return name of weekday.
 
@@ -12,8 +14,5 @@ def weekday_name(day_of_week):
         >>> weekday_name(9)
         >>> weekday_name(0)
     """
-    weekday_names = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
     if day_of_week in range(1,8):
-        return weekday_names[day_of_week - 1]
-    return None
-    
+        return WEEKDAY_NAMES[day_of_week - 1]
